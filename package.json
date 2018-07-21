@@ -1,0 +1,16 @@
+{
+  "name": "webpack-wasm-bug",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cargo +nightly build --target wasm32-unknown-unknown",
+    "bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/webpack_wasm_bug.wasm --out-dir src",
+    "webpack:d": "webpack -d",
+    "webpack:p": "webpack -p",
+    "serve": "serve dist"
+  },
+  "devDependencies": {
+    "serve": "^9.3.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

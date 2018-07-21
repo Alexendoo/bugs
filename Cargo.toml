@@ -1,0 +1,10 @@
+[package]
+name = "webpack-wasm-bug"
+version = "0.1.0"
+authors = ["Alex Macleod <alex@macleod.io>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
